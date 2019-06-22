@@ -25,6 +25,7 @@ RUN yum install -y --enablerepo=remi-php${PHP_VERSION} \
   ImageMagick \
   ImageMagick-devel \
   php-pecl-imagick \
+  mariadb-client \
   wget \
   git \
   unzip
