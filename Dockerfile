@@ -1,5 +1,7 @@
 FROM dustinrue/base-php:latest
 
+ARG PHP_VERSION=73
+
 RUN yum install -y --enablerepo=remi-php${PHP_VERSION} \
   mariadb \
   nc \
