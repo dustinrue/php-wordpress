@@ -1,30 +1,6 @@
-FROM centos:7
+FROM dustinrue/base-php:latest
 
-ARG PHP_VERSION=73
-
-RUN yum upgrade -y
-RUN yum install -y http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 RUN yum install -y --enablerepo=remi-php${PHP_VERSION} \
-  php-common \
-  php-xmlrpc \
-  php-pecl-memcached \
-  php-pecl-memcache \
-  php-mysqlnd \
-  php-pear \
-  php-gd \
-  php-mbstring \
-  php-cli \
-  php-process \
-  php-opcache \
-  php-pecl-redis \
-  php-bcmath \
-  php-pecl-gearman \
-  php-soap \
-  php-devel \
-  php-zip \
-  ImageMagick \
-  ImageMagick-devel \
-  php-pecl-imagick \
   mariadb \
   nc \
   wget \
